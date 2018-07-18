@@ -14,6 +14,15 @@
   </properties>
   
   <dependencies>
+  	
+  	<!-- Link backend project -->
+  	
+  	<dependency>
+  		  <groupId>com.haggar</groupId>
+		  <artifactId>VenteBack</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	
   	<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 	<dependency>
 	    <groupId>javax</groupId>

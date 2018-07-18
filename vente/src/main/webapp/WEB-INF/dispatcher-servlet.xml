@@ -14,6 +14,7 @@
 	
 	
 	<context:component-scan base-package="com.haggar.vente.controller" />
+	<context:component-scan base-package="com.haggar.VenteBack.daoImpl" />
 	
 	<bean  id="viewResolver"
 	
