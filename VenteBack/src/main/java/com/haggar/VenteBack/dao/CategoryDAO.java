@@ -6,8 +6,15 @@ import com.haggar.VenteBack.dto.Category;
 
 public interface CategoryDAO {
 	
-	List<Category> list();
+	
 	
 	Category get(int id);
+	
+	List<Category> list();
+	
+	Boolean add(Category category);
+	Boolean update(Category category);
+	Boolean delete(Category category);
+	
 
 }

@@ -2,7 +2,7 @@
 
 	<div class="row">
 	
-		<!-- Wuold be to display sidebar -->
+		<!-- Would be to display sidebar -->
 			<div class="col-md-3">
 			
 				<%@include file="./shared/sidebar.jsp" %>
