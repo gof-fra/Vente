@@ -24,14 +24,19 @@
     
     <script >
     	window.menu = '${title}';
+    	window.contextRoot = '${contextRoot}'
     </script>
+		    
 
     <!-- Bootstrap core CSS -->
     <link href="${css}/bootstrap.min.css" rel="stylesheet">
     
     
-   <%--  <!-- Bootstrap readable -->
-    <link href="${css}/bootstrap.min.readable.theme.css" rel="stylesheet"> --%>
+   <!-- Bootstrap readable -->
+    <link href="${css}/bootstrap.min.rendable.css" rel="stylesheet"> 
+    
+	<!-- Bootstrap dataTable theme -->
+    <link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     <link href="${css}/myApp.css" rel="stylesheet">
@@ -78,14 +83,24 @@
 		   <%@ include file="./shared/footer.jsp" %>
 		    <!-- /.container -->
 		
-		   <!-- jquery -->
-		    <script src="${js}/jquery-1.10.2.js"></script>
+		   <!-- jquery     jquery-1.10.2.js-->
+		    <script src="${js}/jquery.js"></script>
 		    
 		     <!-- JavaScript -->
 		    <script src="${js}/bootstrap.min.js"></script>
 		    
+		    
+		    <!-- Datatable plugin -->
+		   <script src="${js}/dataTables.bootstrap.js"></script> 
+		    
+		    
+		    <!-- Datatable plugin -->
+		   <script src="${js}/jquery.dataTables.js"></script> 
+		    
 		     <!-- self code javaScript -->
-		    <script src="${js}/myApp.js"></script>
+		    <script src="${js}/myapp.js"></script>
+		    
+		    
 		    
 		    
 		 </div>

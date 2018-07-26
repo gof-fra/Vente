@@ -29,7 +29,7 @@
 	<!-- Loading static source -->
 	<mvc:annotation-driven />
 	
-	<mvc:resources location="/assets/" mapping="/resources/**" />
+	<mvc:resources location="/assets/" mapping="/resources/**" /> 
 	
 	 
 </beans>

@@ -70,6 +70,7 @@ private static AnnotationConfigApplicationContext context;
 	
 	@Test
 	public void  testListActiveProducts () {
+		product.setName("usb");
 		
 		assertEquals("Something went wrong while fetching list of product of product", 12, productDAO.listActiveProducts().size());
     	
