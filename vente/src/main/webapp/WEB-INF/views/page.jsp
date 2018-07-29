@@ -6,7 +6,8 @@
 
 <s:url var="css" value="/resources/css" />
 <s:url var="js" value="/resources/js" />
-<s:url var="images" value="/resources/images" />
+<s:url var="images" value="/resources/images/" />
+<%-- <s:url var="images" value="/webapp/WebContent/images/" /> --%>
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}"></c:set>
 
@@ -24,13 +25,13 @@
     
     <script >
     	window.menu = '${title}';
+    	
     	window.contextRoot = '${contextRoot}'
     </script>
 		    
 
     <!-- Bootstrap core CSS -->
     <link href="${css}/bootstrap.min.css" rel="stylesheet">
-    
     
    <!-- Bootstrap readable -->
     <link href="${css}/bootstrap.min.rendable.css" rel="stylesheet"> 
@@ -58,25 +59,31 @@
 			
 					<!-- Loading page contener -->
 					<c:if test="${userClickHome == true}">
-				   	<%@ include file="home.jsp" %>
+				 	  	<%@ include file="home.jsp" %>
 				  	</c:if>
 				  	
 				  	<!-- click about -->
 				  	<c:if test="${userClickAbout == true}">
-				   	<%@ include file="about.jsp" %>
+				  	 	<%@ include file="about.jsp" %>
 				  	</c:if>
 				  	
 				  	<!-- click contact -->
 				  	<c:if test="${userClickContact == true}">
-				   	<%@ include file="contact.jsp" %>
+				  	 	<%@ include file="contact.jsp" %>
 				  	</c:if>
 				  	
 				  	
 				  	<c:if test="${userClickAllProducts == true or userClickCategoryProducts ==  true}">
-				   	<%@ include file="listProducts.jsp" %>
+				  	 	<%@ include file="listProducts.jsp" %>
 				  	</c:if>
+				  	
+				  	<c:if test="${userClickShowProduct == true }">
+				   		<%@ include file="singleProduct.jsp" %>
+				  	</c:if>
+				  	
+				  
 		  	
-		  </div>
+		    </div>
 		  
 		
 		   <!-- Footer comes here -->

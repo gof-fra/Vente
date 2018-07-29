@@ -34,23 +34,23 @@
 			return factory( $, root, root.document );
 		};
 	}
-	else {
+	/*else {
 		// Browser
 		factory( jQuery, window, document );
-	}
+	}*/
 }(function( $, window, document, undefined ) {
 'use strict';
 var DataTable = $.fn.dataTable;
 
 
 /* Set the defaults for DataTables initialisation */
-$.extend( true, DataTable.defaults, {
+/*$.extend( true, DataTable.defaults, {
 	dom:
 		"<'row'<'col-sm-6'l><'col-sm-6'f>>" +
 		"<'row'<'col-sm-12'tr>>" +
 		"<'row'<'col-sm-5'i><'col-sm-7'p>>",
 	renderer: 'bootstrap'
-} );
+} );*/
 
 
 /* Default class modification */
