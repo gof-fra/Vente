@@ -17,6 +17,10 @@ $(document).ready(function(){
 			$('#listProducts').addClass('active');
 			break;
 			
+		case 'Manage Products' :
+			$('#manageProducts').addClass('active');
+			break;
+			
 		default :
 			if(menu == "Home")break;
 			$('#listProducts').addClass('active');
@@ -83,7 +87,7 @@ $(document).ready(function(){
 							}
 						},
 						
-						{ // parti vu et ajout de product
+						{ // parti vu et ajout de product   quantity == 0
 							data: 'id',
 							bSortable: false,
 							mRender: function(data, type, row) {
@@ -109,6 +113,19 @@ $(document).ready(function(){
 
 		});
 	}
+	
+	// dismiising the alert after 3 secondes
+	
+	var $alert = $('.alert');
+	
+	if($alert.length) {
+		
+		setTimeout(function(){
+			$alert.fadeOut('slow');
+		} , 3000)
+	}
+	
+	
 	
 	
 }); 

@@ -7,7 +7,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="${contextRoot}/home">Online Shopping</a>
+                <a class="navbar-brand" href="${contextRoot}/home">Haggar-Shopping</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -23,6 +23,10 @@
                     
                     <li id="listProducts">
                     	<a href="${contextRoot}/show/all/products">View Products</a>
+                    </li>
+                    
+                    <li id="manageProducts">
+                    	<a href="${contextRoot}/manage/products">Manage Products</a>
                     </li>
                     
                 </ul>

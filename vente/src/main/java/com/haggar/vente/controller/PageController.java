@@ -117,7 +117,7 @@ public class PageController {
 		
 		
 		
-		//update the view count
+		//update the view count   permettre de compter les vues sur les produits  
 		product.setViews(product.getViews() +1);
 		productDAO.update(product);
 		
