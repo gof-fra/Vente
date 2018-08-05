@@ -109,10 +109,11 @@
 		    <!-- Datatable plugin -->
 		   <script src="${js}/jquery.dataTables.js"></script> 
 		    
+		    <!-- Bootbox -->
+		   <script src="${js}/bootbox.min.js"></script> 	
+		    
 		     <!-- self code javaScript -->
-		    <script src="${js}/myapp.js"></script>
-		    
-		    
+		   <script src="${js}/myapp.js"></script>
 		    
 		    
 		 </div>

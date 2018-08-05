@@ -90,15 +90,15 @@ footer {
 
 .adminDataTableImg {
 	
-	width: 20px;
-	height:20px;
+	width: 50px;
+	height: 50px;
 	
-}
+} 
 
 
 .switch {
-	width: 50px;
-	height: 30px;
+	width: 50%;
+	height: 30%;
 	position : relative;
 	display : inline-block;
 }
@@ -135,14 +135,14 @@ footer {
 }
 
 
-input:checked + slider {
+.input:checked + slider {
 	background-color: #1863E6;
 }
 
-input:checked + slider:before {
+.input:checked + slider:before {
 	tranform: translateX(20px);
 }
-
+ 
 
 
 
