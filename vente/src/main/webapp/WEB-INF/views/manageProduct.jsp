@@ -49,7 +49,7 @@
 							<div class="col-md-8">
 								
 								<sf:input type="text" path="name" id="name" placeholder="Product name" class="form-control" />
-								<sf:errors path="name" cssClass="help-block" element="em" > </sf:errors>
+								<sf:errors path="name" cssClass="help-block" element="em" />
 							</div>
 						</div>
 						
@@ -62,7 +62,7 @@
 							<div class="col-md-8">
 								
 								<sf:input type="text" path="brand" id="brand" placeholder="Brand name" class="form-control" />
-								<sf:errors path="brand" cssClass="help-block" element="em" > </sf:errors>
+								<sf:errors path="brand" cssClass="help-block" element="em" />
 							
 							</div>
 						</div>
@@ -76,7 +76,7 @@
 							<div class="col-md-8">
 								
 								<sf:textarea path="description" id="description" rows="4" placeholder="Write some description" class="form-control" />
-								<sf:errors path="description" cssClass="help-block" element="em" > </sf:errors>
+								<sf:errors path="description" cssClass="help-block" element="em" />
 							</div>
 						</div>
 						
@@ -89,7 +89,7 @@
 							<div class="col-md-8">
 								
 								<sf:input type="number" path="unitPrice" id="unitPrice" placeholder="Write price" class="form-control" />
-								<sf:errors path="unitPrice" cssClass="help-block" element="em" > </sf:errors>
+								<sf:errors path="unitPrice" cssClass="help-block" element="em" /> 
 							</div>
 						</div>
 						
@@ -115,7 +115,7 @@
 							<div class="col-md-8">
 								
 								<sf:input type="file" path="file" id="file" class="form-control" />
-								<sf:errors path="file" cssClass="help-block" element="em" > </sf:errors>
+								<sf:errors path="file" cssClass="help-block" element="em" /> 
 								
 							</div>
 						</div> 
@@ -178,7 +178,7 @@
 		
 			<div style="overflow:auto">
 			
-				<table id="adminProductstable" class="table table-striped table-bordered">
+				<table id="adminProductsTable" class="table table-striped table-bordered">
 				
 					<thead>
 						<tr>
@@ -192,22 +192,21 @@
 						</tr>
 					</thead>
 					
-					 <tbody>
+<%-- 					 <tbody>
 						<tr>
 							<td>4</td>
 							<td>
 								<img alt="Mac OS" class="adminDataTableImg" src="${contextRoot}/resources/images/PRDDEF121OPMC.jpg" > 
 							</td>
 							<td>Mac OS</td>
-							<td>3</td>
+							<td>115</td>
 							<td> 7950.00 dt</td>
 							
 							<td> 
-								<input type="checkbox" checked="checked" value="4">
-								<!-- <label class="switch">
-									<input type="checkbox" checked="checked" value="4">
-									<div class = "slider"> </div> 
-								</label>  -->
+								<div class="slideThree1">	
+									<input type="checkbox" checked="checked" value="4" />
+									<label for="slideThree1" class="switch"></label>
+								</div>
 							</td>
 							
 							<td>
@@ -216,21 +215,20 @@
 								</a>
 							</td>
 						</tr>
-						
+					
 						<tr>
 							<td>4</td>
 							<td>
 								<img alt="Mac OS" class="adminDataTableImg" src="${contextRoot}/resources/images/PRDDEF121OPMC.jpg" >
 							 </td>
 							<td>Mac OS</td>
-							<td>3</td>
+							<td>115</td>
 							<td> 7950.00 dt</td>
 							<td> 
-								<input type="checkbox" checked="checked" value="4">
-								<!-- <label class="switch">
-									<input type="checkbox" checked="checked" value="4">
-									<div class="slider" ></div>
-								</label>  -->
+									<div class="slideThree1">	
+										<input type="checkbox" checked="checked" value="4" />
+										<label for="slideThree2" class="switch"></label>
+									</div>
 							</td>
 							<td>
 								<a href="${contextRoot}/manage/4/product" class="btn btn-warning">
@@ -238,7 +236,7 @@
 								</a>
 							</td>
 						</tr>
-					</tbody>
+					</tbody> --%>
 					
 					<tfoot>
 						<tr>
@@ -257,6 +255,8 @@
 			</div>
 		</div>
 	</div>	
+	
+	
 	
 		
 </div>

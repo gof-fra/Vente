@@ -56,7 +56,7 @@ $(document).ready(function(){
 			columns : [
 						{
 							data: 'code',
-							mRender: function(data, type, row) {
+							mRender: function(data, type, row) {   //? datatableImg
 								return '<img src=" '+window.contextRoot+' /resources/images/ '+data+' .jpg" class="dataTableImg"/>';
 							}
 						},
@@ -114,6 +114,111 @@ $(document).ready(function(){
 		});
 	}
 	
+	
+	// dataTable for admin
+	
+	
+	var $adminProductsTable = $('#adminProductsTable');
+	// execute the below code only where we have  this  table
+	
+	if($adminProductsTable.length) {	
+		
+		var jsonUrl = window.contextRoot + '/json/data/admin/all/products';
+		
+		
+		$adminProductsTable.DataTable( {
+			lengthMenu: [[10, 30, 50, -1],['10 Records','30 Records','50 Records','ALL']], //le nombre d'entrée
+			pageLength: 30,  //nombre de ligne
+			ajax: {
+				url: jsonUrl,
+				dataSrc: ''
+			},
+			
+			columns : [
+						{
+							data: 'id'
+						},
+						{
+							data: 'code',
+							mRender: function(data, type, row) {   //? datatableImg
+								return '<img src=" '+window.contextRoot+' /resources/images/ '+data+' .jpg" class="dataTableImg"/>';
+							}
+						},
+						{
+							data: 'name'
+						},
+						{
+							data: 'brand'
+						},
+						{
+							data: 'quantity',
+							mRender: function(data, type, row) {
+								
+								if(data < 1) {
+									
+									return '<span style="color:red">Out of stock! </span>';
+									
+								}
+								
+								return data;
+								
+							}
+						},
+						{
+							data: 'unitPrice',
+							mRender: function(data, type, row) {
+									return '' + data +' dt'
+								}
+						},
+						{ 
+							data: 'active',
+							bSortable: false,
+							mRender: function(data, type, row) {
+								
+								
+								
+								var str = '';
+								
+								str += '<div class="slideThree1">';
+									if(data){
+										str += '<input type="checkbox"  checked="checked" value=" '+row.id+' " />';
+									}
+									else{
+										str += '<input type="checkbox"  value=" '+row.id+' " />';
+									}
+								
+								
+										str += '<label for="slideThree2" class="switch"></label> </div>';
+							
+					
+								return str;
+							}	
+						},
+						{
+							data : 'id',
+							bSortable: false,
+							mRender : function(data, type, row){
+								
+								
+								var str = '';
+								
+								str += '<a href="${contextRoot}/manage/' +data+ '/product" class="btn btn-warning">';
+								str += '<span class="glyphicon glyphicon-pencil"></span> </a>';
+									
+									return str;
+								
+							}
+						}
+	
+					 ]
+			
+
+		});
+	}
+	
+	
+	
+	
 	// dismiising the alert after 3 secondes
 	
 	var $alert = $('.alert');
@@ -127,35 +232,6 @@ $(document).ready(function(){
 	
 	
 	// Bouton active for bootbox.js
-	
-	$('switch input [type="checkbox"]').on('change', function(){
-		
-		var checkbox = $(this)
-		var checked =  checkbox.prop('checked');
-		var dMsg = (checked)? 'Would you want to active the product':
-							  'Would you want to desactive the product';
-		var value = checkbox.prop('value');
-		bootbox.confirm({
-			size: 'medium',
-			title: 'Product Active & desactive',
-			message: dMsg,
-			callback: function(confirmed) {
-				if(confirmed) {
-					console.log(value);
-					bootbox.alert({
-						size:'medium',
-						title: 'Information',
-						message: 'You are going to perform operation on product' + value
-					});
-				}else {
-					checkbox.prop('checked', !checked);
-				}
-			}
-		});
-		
-	});
-	
-	
 	
 	
 }); 

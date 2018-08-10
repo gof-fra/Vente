@@ -33,7 +33,7 @@ public class JsonController {
 	@ResponseBody
 	public List<Product> getAllProductsForAdmin() {
 		
-		return productDAO.listActiveProducts();
+		return productDAO.list();
 		
 	}
 	

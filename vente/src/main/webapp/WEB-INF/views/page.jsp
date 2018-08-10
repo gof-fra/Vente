@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@taglib prefix="s" uri="http://www.springframework.org/tags"%>
@@ -30,17 +31,23 @@
     </script>
 		    
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS --Worked-->
     <link href="${css}/bootstrap.min.css" rel="stylesheet">
     
-   <!-- Bootstrap readable -->
+    <!-- Bootstrap readable -->
     <link href="${css}/bootstrap.min.rendable.css" rel="stylesheet"> 
     
 	<!-- Bootstrap dataTable theme -->
     <link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 
-    <!-- Add custom CSS here -->
-    <link href="${css}/myApp.css" rel="stylesheet">
+    <!-- Bootstrap core CSS --Worked no-->
+    <link href="${css}/myapp.css" rel="stylesheet">
+    
+    <!-- Bootstrap core CSS --Worked no-->
+    <link href="${css}/bouton.css" rel="stylesheet">
+    
+    <!-- Bootstrap core CSS --Worked no-->
+   <%--  <link href="${css}/shop-homepage.css" rel="stylesheet"> --%>
 
 </head>
 
@@ -111,6 +118,9 @@
 		    
 		    <!-- Bootbox -->
 		   <script src="${js}/bootbox.min.js"></script> 	
+		   
+		    <!-- bouton -->
+		   <script src="${js}/bouton.js"></script> 	
 		    
 		     <!-- self code javaScript -->
 		   <script src="${js}/myapp.js"></script>

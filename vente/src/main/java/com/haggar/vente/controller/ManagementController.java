@@ -23,6 +23,7 @@ import com.haggar.VenteBack.dao.ProductDAO;
 import com.haggar.VenteBack.dto.Category;
 import com.haggar.VenteBack.dto.Product;
 import com.haggar.vente.file.FileUploadUtility;
+import com.hagggar.vente.validator.ProductValidator;
 
 @Controller
 @RequestMapping("/manage")
@@ -85,6 +86,8 @@ public class ManagementController {
 	public String handleProductSubmission(@Valid @ModelAttribute("product") Product mProduct, BindingResult results, 
 			Model model,
 			HttpServletRequest request) {
+		
+			new ProductValidator().validate(mProduct, results);
 		
 		
 		
