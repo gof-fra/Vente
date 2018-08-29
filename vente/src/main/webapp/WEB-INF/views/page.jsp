@@ -1,4 +1,5 @@
 
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -45,9 +46,11 @@
     
     <!-- Bootstrap core CSS --Worked no-->
     <link href="${css}/bouton.css" rel="stylesheet">
+    <!-- Bouton active and desactive --Worked no-->
+    <link href="${css}/cssBouton.css" rel="stylesheet">
     
     <!-- Bootstrap core CSS --Worked no-->
-   <%--  <link href="${css}/shop-homepage.css" rel="stylesheet"> --%>
+   <link href="${css}/shop-homepage.css" rel="stylesheet">
 
 </head>
 

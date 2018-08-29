@@ -192,7 +192,7 @@
 						</tr>
 					</thead>
 					
-<%-- 					 <tbody>
+					<tbody>
 						<tr>
 							<td>4</td>
 							<td>
@@ -203,10 +203,10 @@
 							<td> 7950.00 dt</td>
 							
 							<td> 
-								<div class="slideThree1">	
+								<label class="switch">	
 									<input type="checkbox" checked="checked" value="4" />
-									<label for="slideThree1" class="switch"></label>
-								</div>
+									<div class="slider"></div>
+								</label>
 							</td>
 							
 							<td>
@@ -225,10 +225,10 @@
 							<td>115</td>
 							<td> 7950.00 dt</td>
 							<td> 
-									<div class="slideThree1">	
-										<input type="checkbox" checked="checked" value="4" />
-										<label for="slideThree2" class="switch"></label>
-									</div>
+								<label class="switch">	
+									<input type="checkbox" checked="checked" value="4" />
+									<div class="slider"></div>
+								</label>
 							</td>
 							<td>
 								<a href="${contextRoot}/manage/4/product" class="btn btn-warning">
@@ -236,7 +236,7 @@
 								</a>
 							</td>
 						</tr>
-					</tbody> --%>
+					</tbody> 
 					
 					<tfoot>
 						<tr>

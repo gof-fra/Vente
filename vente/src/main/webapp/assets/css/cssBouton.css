@@ -1,0 +1,57 @@
+.adminDataTableImg {
+	
+	width: 50px;
+	height: 50px;
+	
+} 
+
+
+.switch {
+	width: 50%;
+	height: 30%;
+	position : relative;
+	display : inline-block;
+}
+
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	position : absolute;
+	top : 0;
+	bottom: 0;
+	right : 0;
+	left :0;
+	cursor : pointer;
+	background-color: #ccc;
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.slider:before {
+	position : absolute;
+	top : 0;
+	bottom: 0;
+	right : 0;
+	left :0;
+	background-color: #fff;
+	border-radius: 30px;
+	transition: .5s;
+	width: 20px;
+	height: 20px;
+	content= "";
+}
+
+
+.input:checked + slider {
+	background-color: #1863E6;
+}
+
+.input:checked + slider:before {
+	tranform: translateX(20px);
+}
+ 
+
+ 
